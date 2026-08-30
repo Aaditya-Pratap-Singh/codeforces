@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int t;
+    scanf("%d",&t);
+    const char target[]= "codeforces";
+    while(t--){
+        char s[11];
+        scanf("%s",s);
+        int diff=0;
+        for(int i=0;i<10;i++){
+            if(s[i]!=target[i]){
+                diff++;
+            }
+        }
+        printf("%d\n",diff);
+    }
+    return 0;
+}
