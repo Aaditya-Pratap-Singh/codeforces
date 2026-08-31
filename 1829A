@@ -8,7 +8,7 @@ int main()
         char s[11];
         scanf("%s",s);
         int diff=0;
-        for(int i=0;i<10;i++){
+        for(int i=0;i<10;i++){ 
             if(s[i]!=target[i]){
                 diff++;
             }
