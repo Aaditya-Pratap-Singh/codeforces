@@ -8,5 +8,5 @@ int main()
         scanf("%d",&n); 
         printf("%d\n",(n/10)+(n%10));
     }
-    return 0;
+    return 0; 
 }
