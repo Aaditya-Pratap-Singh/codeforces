@@ -12,7 +12,7 @@ int main() {
 
         int first_b = -1, last_b = -1;
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) { 
             if (s[i] == 'B') {
                 if (first_b == -1) {
                     first_b = i;
