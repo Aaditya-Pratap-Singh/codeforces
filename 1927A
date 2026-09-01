@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int t;
+    if (scanf("%d", &t) != 1) return 0;
+
+    while (t--) {
+        int n;
+        scanf("%d", &n);
+        char s[20];
+        scanf("%s", s);
+
+        int first_b = -1, last_b = -1;
+
+        for (int i = 0; i < n; i++) {
+            if (s[i] == 'B') {
+                if (first_b == -1) {
+                    first_b = i;
+                }
+                last_b = i;
+            }
+        }
+
+        if (first_b == -1) {
+            printf("0\n");
+        } else {
+            printf("%d\n", last_b - first_b + 1);
+        }
+    }
+
+    return 0;
+}
