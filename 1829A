@@ -5,9 +5,9 @@ int main()
     scanf("%d",&t);
     const char target[]= "codeforces";
     while(t--){
-        char s[11];
+        char s[11]; 
         scanf("%s",s);
-        int diff=0;
+        int diff=0; 
         for(int i=0;i<10;i++){ 
             if(s[i]!=target[i]){
                 diff++;
