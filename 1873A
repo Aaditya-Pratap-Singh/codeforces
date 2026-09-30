@@ -5,7 +5,7 @@ int main()
     scanf("%d",&t);
     while(t--){
         char s[4];
-        scanf("%s",s);
+        scanf("%s",s); 
         if(s[0]=='a' || s[1]=='b' || s[2]=='c'){   
             printf("YES\n");
         }else{
